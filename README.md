@@ -62,7 +62,7 @@ $ sam package --template-file lambda-events-API.yml --s3-bucket demotest-101 --o
 
 The pacckage is downloaded in SAM folder of Cloud9
 
-![image](https://github.com/felixdagnon/Create-API-and-lambda-events-using-SAM/assets/91665833/7219b79a-e997-4665-889c-6c5cb5fe8359)
+![image](https://github.com/felixdagnon/Create-API-and-lambda-events-using-SAM/assets/91665833/bf2f5918-b4dc-4680-ad7b-670fcd11f2fc)
 
 It take the code from local directory and put it in s3 bucket.
 
@@ -73,17 +73,26 @@ Let's check s3 bucket
 
 # Deploying lambda package with SAM
 
-To deploy the package rune the below command
+To deploy the package run the below command
 
-$ sam deploy --template-file lambda-events-s3-packaged.yml --stack-name SAM-S3-events --capabilities CAPABILITY_IAM
+$ sam deploy --template-file lambda-events-API-packaged.yml --stack-name SAM-API-events --capabilities CAPABILITY_IAM
 
-The package is running and changeset created in cloudformation
+The package is done and changeset created in cloudformation
 
-![image](https://github.com/felixdagnon/S3-TRIGGER-LAMBDA-USING-SAM/assets/91665833/e5a2aa26-b720-4816-ae0e-2f05b2ab1150)
+![image](https://github.com/felixdagnon/Create-API-and-lambda-events-using-SAM/assets/91665833/0a4fe34d-42d8-43c6-9af9-8d9b0fe8fb49)
 
 Let's see Cloudformation. The stack is created
 
-![image](https://github.com/felixdagnon/S3-TRIGGER-LAMBDA-USING-SAM/assets/91665833/7fd7f55c-50a1-44a3-974a-4b5ef0ff7820)
+![image](https://github.com/felixdagnon/Create-API-and-lambda-events-using-SAM/assets/91665833/9ef12141-ebe8-4ab5-b09c-46833dcfea8d)
+
+Let's check out API Gateway first
+
+![image](https://github.com/felixdagnon/Create-API-and-lambda-events-using-SAM/assets/91665833/c527288b-1a5e-45ee-a0df-3134dbda7132)
+
+It' triggered lambda function
+
+![image](https://github.com/felixdagnon/Create-API-and-lambda-events-using-SAM/assets/91665833/7660c0e7-8b43-4b4c-8482-bb5e9e925237)
+
 
 Let's check in lambda console
 
@@ -91,20 +100,9 @@ Let's check in lambda console
 
 Lambda deployment succeed
 
-There is no trigger here but we can check it in S3 bucket
-
-![image](https://github.com/felixdagnon/S3-TRIGGER-LAMBDA-USING-SAM/assets/91665833/1922c5d3-6ac1-48ac-b5f9-c66a533e2f17)
+![image](https://github.com/felixdagnon/Create-API-and-lambda-events-using-SAM/assets/91665833/aed47683-6cdb-4492-8378-cd65c2398f7a)
 
 
-![image](https://github.com/felixdagnon/S3-TRIGGER-LAMBDA-USING-SAM/assets/91665833/ba3bcd0b-7d67-4724-9d58-c538f264b601)
+![image](https://github.com/felixdagnon/Create-API-and-lambda-events-using-SAM/assets/91665833/c95932de-77f6-45ca-aa8b-ff598e79a24e)
 
 
-Let's check S3 bucket
-
-Properties
-
-![image](https://github.com/felixdagnon/S3-TRIGGER-LAMBDA-USING-SAM/assets/91665833/a08fab95-b99e-4381-a549-ac3bee5c731b)
-
-scrowl down to "Event notifications"
-
-![image](https://github.com/felixdagnon/S3-TRIGGER-LAMBDA-USING-SAM/assets/91665833/97332493-5c39-4496-933d-8d6c669ee076)
