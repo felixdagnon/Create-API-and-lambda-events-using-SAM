@@ -56,7 +56,7 @@ Resources:
 
 # Create lambda template with SAM
 
-Let's run this package lambda-events-s3.yml:
+Let's run this package lambda-events-API.yml:
 
 $ sam package --template-file lambda-events-API.yml --s3-bucket demotest-101 --output-template-file  lambda-events-API-packaged.yml
 
