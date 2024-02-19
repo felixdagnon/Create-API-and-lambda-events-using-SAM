@@ -98,7 +98,6 @@ Let's check in lambda console
 
 Lambda deployment succeed
 
-
 ![image](https://github.com/felixdagnon/Create-API-and-lambda-events-using-SAM/assets/91665833/aed47683-6cdb-4492-8378-cd65c2398f7a)
 
 
