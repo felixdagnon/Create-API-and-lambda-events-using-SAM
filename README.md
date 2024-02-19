@@ -93,7 +93,6 @@ It' triggered lambda function
 
 ![image](https://github.com/felixdagnon/Create-API-and-lambda-events-using-SAM/assets/91665833/7660c0e7-8b43-4b4c-8482-bb5e9e925237)
 
-
 Let's check in lambda console
 
 ![image](https://github.com/felixdagnon/S3-TRIGGER-LAMBDA-USING-SAM/assets/91665833/9aab492e-ec0f-4e20-8bde-13187aba1a02)
