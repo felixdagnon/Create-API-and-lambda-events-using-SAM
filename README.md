@@ -27,7 +27,6 @@ Resources:
       SamResourceId: samfunction
 ```
 
-
 Here is the final template for lambda-events-API.yml file
 
 ```json
