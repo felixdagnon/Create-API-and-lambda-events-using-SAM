@@ -1,4 +1,4 @@
-# Create-API-and-lambda-events-using-SAM
+# 1-Create-API-and-lambda-events-using-SAM
 Create API and lambda events using SAM
 
 We continuous with our last demo (S3-TRIGGER-LAMBDA-USING-SAM)
@@ -53,7 +53,7 @@ Resources:
 
 
 
-# Create lambda template with SAM
+# 2-Create lambda template with SAM
 
 Let's run this package lambda-events-API.yml:
 
@@ -70,7 +70,7 @@ Let's check s3 bucket
 ![image](https://github.com/felixdagnon/Create-API-and-lambda-events-using-SAM/assets/91665833/6338f502-f995-48cb-8617-3e459dca00e4)
 
 
-# Deploying lambda package with SAM
+# 3-Deploying lambda package with SAM
 
 To deploy the package run the below command
 
